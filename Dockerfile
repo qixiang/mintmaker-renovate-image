@@ -35,10 +35,10 @@ RUN dnf update -y && \
         https://github.com/tektoncd/cli/releases/download/v0.35.1/tektoncd-cli-0.35.1_Linux-64bit.rpm
 
 # Add renovate user and switch to it
-RUN useradd -lms /bin/bash -u 1001 renovate
+RUN useradd -lms /bin/bash -u 1001042024 renovate
 
 WORKDIR /home/renovate
-USER 1001
+USER 1001042024
 
 # Enable renovate user's bin dirs,
 #   ~/.local/bin for Python executables
